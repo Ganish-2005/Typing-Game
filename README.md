@@ -21,6 +21,6 @@ A fun and interactive web-based typing speed game that tests your typing skills 
 Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/yourusername/typing-game.git
+git clone[ https://github.com//typing-game.git](https://github.com/Ganish-2005/Typing-Game/)
 cd typing-game
 open index.html
