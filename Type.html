@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Type.css" />
+</head>
+<body>
+
+    <h1> Type Racer</h1>
+
+    <div class="game-container">
+        <div class="settings">
+            <div class="difficulty-container">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+
+        <h2 id="word-display">Press Start</h2>
+
+        <input type="text" id="word-input" placeholder="Type the word here..." autocomplete="off" disabled />
+
+        <div class="info">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="time">30</span>s</p>
+        </div>
+
+        <div id="game-over" class="hide">
+            <h2>Time's Up!</h2>
+            <p>Your final score is: <span id="final-score"></span></p>
+            <p>Press Start to play again.</p>
+        </div>
+
+        <div class="button-group">
+            <button id="start-btn">Start Game</button>
+            <button id="stop-btn" disabled>Stop Game</button>
+        </div>
+    </div>
+
+    <script src="Type.js"></script>
+</body>
+</html>
